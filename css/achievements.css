@@ -1,0 +1,307 @@
+*{
+  box-sizing: border-box;
+  cursor: pointer;
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px auto;
+            
+          background-image: linear-gradient(90deg, #00FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #00FFFF);            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-items: center;
+            overflow: visible;
+            width: 100%;
+            height: auto;
+        }
+        
+        /*nav bar*/
+        fieldset {
+            border: 3px solid black;
+            padding: 10px 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width:90%;
+            margin-top: 20px;
+            margin:0 auto;
+            height: auto;
+        }
+        
+        .navbar{
+          position: sticky;
+          bottom: 10vh;
+          align-items: center;
+          justify-content: center;
+        }
+        .button-container {
+          color: white;
+            position: absolute;
+            right: 55%;
+            transform: translateX(-50%); /* Offset the circle to be centered */
+            /* Position it halfway above the navbar */
+            z-index: 999; /* Ensure it is above the navbar */
+        }
+
+        .button {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            line-height: 55px;
+            position: absolute;
+            transition: all 0.3s ease;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .hidden {
+            transform: translate(0, 0);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #mainButton {
+            z-index: 10;
+            transition: transform 0.6s ease;
+            background:linear-gradient(90deg, purple,red, purple);
+        }
+
+        #buttonA, #buttonB, #buttonC, #buttonD, #buttonE {
+            color: white;
+            opacity: 0;
+            pointer-events: none;
+            background: linear-gradient(90deg, #0a0a23, #b0b0b0,#0a0a23);
+d: linear-gradient(90deg,red,aqua,red);
+            backdrop-filter: blur(10px);
+        }
+
+        #buttonA {
+            transform: translate(0, 0); /* Start from center */
+        }
+
+        #buttonB {
+            transform: translate(0, 0); /* Start from center */
+        }
+
+        #buttonC {
+            transform: translate(0, 0); /* Start from center */
+        }
+        
+        #buttonD {
+            transform: translate(0, 0); /* Start from center */
+        }
+        
+        #buttonE {
+            transform: translate(0, 0); /* Start from center */
+        }
+        .dot {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: red;
+            pointer-events: none;
+            opacity: 0.7;
+        }
+        
+        @keyframes moveAlongPath {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        
+        .tooltip {
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    height: auto;
+    color: black;
+    text-align: center;
+    border: 2px solid white;
+    background: linear-gradient(0deg, red,white,red);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+i{
+  color: white;
+}
+
+
+      .section-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .achievements {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .achievements fieldset {
+        border: 2px solid #b0b0b0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .certificates-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center; /* Center align certificates in Carousel */
+      }
+
+      .scrollable-certificates {
+        width: 25%;
+        height: 380px; /* Fixed height for scroll area */
+        overflow-y: auto; /* Enable vertical scroll */
+        margin-right: 5%;
+        float: left;
+        position: relative;
+      }
+
+      .scrollable-certificates img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        opacity: 0.6;
+        border-radius: 5%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .scrollable-certificates img:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .carousel {
+        width: 70%;
+        height: 50%; /* Adjust the height */
+        overflow: hidden;
+        float: right;
+        position: relative;
+        display: flex;
+        align-items: center; /* Center content vertically */
+      }
+
+      .carousel img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: none;
+      }
+
+      .carousel img.active {
+        display: block;
+      }
+
+      .carousel .text {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 97%;
+        box-sizing: border-box;
+      }
+
+      .carousel-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
+
+      .carousel-buttons .button1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .scroll-buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 768px) {
+        .scrollable-certificates {
+          width: 30%;
+          margin-right: 5%;
+        }
+        .carousel {
+          width: 65%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .scrollable-certificates {
+          width: 35%;
+          margin-right: 5%;
+        }
+        .carousel {
+          width: 60%;
+        }
+        .carousel .text {
+          font-size: 12px;
+          padding: 5px;
+        }
+        .carousel-buttons .button1 {
+          padding: 5px;
+        }
+      }
