@@ -6,7 +6,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px auto;
-          background-image: linear-gradient(90deg, #00FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #00FFFF);            backdrop-filter: blur(5px);
+            background-image: linear-gradient(90deg, #00FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #B3FFFF, #00FFFF);            backdrop-filter: blur(5px);
             align-items: center;
             justify-items: center;
             height: auto;
@@ -15,18 +15,18 @@
         }
         .container {
           align-items: center;
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
             position: static;
             border: 3px solid black;
+            width: 90%;
         }
         /* Header Section */
         .header {
             display: grid;
-            border-bottom: 2px;
-            solid: #007bff;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
             margin-bottom: 20px;
             text-align: justify;
