@@ -106,15 +106,3 @@ function handleMouseMove(e) {
     trail.forEach(dot => dot.style.animation = `moveAlongPath 1s forwards`);
   }, 100);
 }
-
-// Add event listener for mouse movement
-document.addEventListener('mousemove', handleMouseMove);
-
-
-document.getElementById('colorButton').addEventListener('click', function() {
-    this.classList.toggle('clicked');
-  });
-  
-    document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
