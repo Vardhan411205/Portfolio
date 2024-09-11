@@ -36,7 +36,7 @@
         .button-container {
           color: white;
             position: absolute;
-            right: 52%;
+            right: 51%;
             transform: translateX(-50%); /* Offset the circle to be centered */
             /* Position it halfway above the navbar */
             z-index: 999; /* Ensure it is above the navbar */
