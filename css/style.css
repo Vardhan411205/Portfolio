@@ -18,7 +18,7 @@
             margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
-            background-image: linear-gradient(180deg, gray,white,white,white,white, white, white, white, white, white, gray);
+            background-image: linear-gradient(180deg, gray,white,white,white,white,white, white, white, white, white, white, gray);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
             position: static;
             border: 3px solid black;
