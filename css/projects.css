@@ -14,40 +14,6 @@
             width: 100%;
         }
 
-        /* For small devices like smartphones (portrait mode, less than 600px) */
-@media only screen and (max-width: 600px) {
-    body {
-      max-width: 100%;
-    }
-  }
-  
-  /* For medium devices like tablets (600px to 768px) */
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-      max-width: 100%;
-    }
-  }
-  
-  /* For tablets in landscape mode and small laptops (768px to 1024px) */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-      max-width: 100%;
-    }
-  }
-  
-  /* For laptops and desktops (1024px to 1200px) */
-  @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    body {
-      max-width: 100%;
-    }
-  }
-  
-  /* For large screens (more than 1200px) */
-  @media only screen and (min-width: 1200px) {
-    body {
-      max-width: 100%;
-    }
-  }
         
         /*nav bar*/
         .navbar{
@@ -126,7 +92,7 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background-color: red;
+            background-color: #ff6f61;
             pointer-events: none;
             opacity: 0.7;
         }
