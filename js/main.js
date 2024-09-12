@@ -106,3 +106,4 @@ function handleMouseMove(e) {
     trail.forEach(dot => dot.style.animation = `moveAlongPath 1s forwards`);
   }, 100);
 }
+document.addEventListener('mousemove', handleMouseMove);
