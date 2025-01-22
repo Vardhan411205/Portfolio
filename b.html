@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live HTML Update Example</title>
+  <style>
+    #editableContent {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live HTML Update Example</h1>
+
+  <div contenteditable="true" id="editableContent">
+    This text can be edited directly in the browser.
+  </div>
+
+  <button onclick="downloadHTML()">Download Updated HTML</button>
+
+  <script>
+    // Function to download the current HTML of the page
+    function downloadHTML() {
+      const content = document.documentElement.outerHTML; // Get the entire HTML of the page
+      const blob = new Blob([content], { type: 'text/html' }); // Create a Blob object
+      const link = document.createElement('a'); // Create a download link
+      link.href = URL.createObjectURL(blob); // Create a URL for the Blob
+      link.download = 'updated-page.html'; // Set the filename
+      link.click(); // Trigger the download
+    }
+  </script>
+</body>
+</html>
